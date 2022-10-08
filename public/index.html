@@ -11,14 +11,28 @@
     <div class="app">
         <div class="screen join-screen active">
             <div class="form">
-                <h2>Join Chatroom</h2>
+                <h2>Chatroom</h2>
+
                 <div class="form-input">
+                    <!-- <label>Username</label>
+                    <input type="text" id ="username"> -->
+
+                    <input type="text" class="form-field" placeholder="Name" name="name" id='username'/>
+                    <label for="username" class="form-label">Username</label>
+                </div>
+
+                <!-- <div class="form-input">
                     <label>Username</label>
-                    <input type="text" id ="username">
-                </div>
+                    <input type="text" id ="username" class="question" required autocomplete="off">
+                    <label for="username"><span>What's your name?</span></label>
+                </div> -->
+
+
+
                 <div class="form-input">
-                    <button id="join-user">Join</button>
+                    <button id="join-user" hidden>Join</button>
                 </div>
+
             </div>
         </div>
         <div class="screen chat-screen">
